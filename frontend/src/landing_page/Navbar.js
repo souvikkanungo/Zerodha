@@ -33,7 +33,7 @@ function Navbar() {
                 <Link
                   class="nav-link active"
                   aria-current="page"
-                  to={"/Signup"}
+                  to={"/signup"}
                 >
                   Signup
                 </Link>

@@ -10,6 +10,7 @@ const Login = () => {
     password: "",
   });
   const { email, password } = inputValue;
+
   const handleOnChange = (e) => {
     const { name, value } = e.target;
     setInputValue({
@@ -48,6 +49,7 @@ const Login = () => {
         handleError(message);
       }
     } catch (error) {
+      handleError(error.message);
       console.log(error);
     }
     setInputValue({
@@ -58,7 +60,7 @@ const Login = () => {
   };
 
   return (
-    <div className="form_container">
+    <div className="form_container m-auto">
       <h2>Login Account</h2>
       <form onSubmit={handleSubmit}>
         <div>

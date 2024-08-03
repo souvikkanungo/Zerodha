@@ -42,7 +42,7 @@ const Signup = () => {
       if (success) {
         handleSuccess(message);
         setTimeout(() => {
-          navigate("/");
+          navigate("http://localhost:3001");
         }, 1000);
       } else {
         handleError(message);
@@ -59,7 +59,7 @@ const Signup = () => {
   };
 
   return (
-    <div className="form_container">
+    <div className="form_container m-auto">
       <h2>Signup Account</h2>
       <form onSubmit={handleSubmit}>
         <div>
